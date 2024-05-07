@@ -1,0 +1,32 @@
+# config/routes.yaml
+
+get_tasks:
+    path: /api/tasks
+    controller: 'App\Controller\TaskController::getTasks'
+    methods: GET
+
+create_task:
+    path: /api/tasks
+    controller: 'App\Controller\TaskController::createTask'
+    methods: POST
+
+get_task:
+    path: /api/tasks/{id}
+    controller: 'App\Controller\TaskController::getTask'
+    methods: GET
+    requirements:
+        id: '\d+'
+
+update_task:
+    path: /api/tasks/{id}
+    controller: 'App\Controller\TaskController::updateTask'
+    methods: PUT|PATCH
+    requirements:
+        id: '\d+'
+
+delete_task:
+    path: /api/tasks/{id}
+    controller: 'App\Controller\TaskController::deleteTask'
+    methods: DELETE
+    requirements:
+        id: '\d+'
