@@ -1,14 +1,13 @@
 # ToDoList
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+This is a simple todolist application built on Angular 15. It allows the user to enter the task and deadline of the task. User can also click on the checkbox with the newly added task to mark it as completed and there is a filter buttons to filter completed, active or see all tasks. 
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To run Angular application run `ng serve` for a dev server. After successful built navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To Run the backend make sure you have php, composer and symfony installed into your system. Then follow the following step to run the backend.
+To run the backend open the terminal in the backend/todolist directory and then type 'symfony server:start'
+To setup database go to the env file in root of backend/todolist folder and change the databaseurl according to your db
 
 ## Build
 
@@ -24,4 +23,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+If you need any guidance regarding this project feel free to contact me at m.hasnain876@gmail.com
