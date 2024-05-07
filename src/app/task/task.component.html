@@ -1,0 +1,24 @@
+<div class="container">
+  <!-- src/app/task/task.component.html -->
+  <div style="display: flex; gap: 1rem;">
+    <input class="input" type="text" [(ngModel)]="newTaskDescription" placeholder="Task description">
+    <input class="input-date" type="date" [(ngModel)]="newTaskDeadline">
+    <button class="button primary" (click)="addTask()">Add Task</button>
+  </div>
+
+  <!-- Add filter buttons above the task list -->
+  <div style="display: flex; gap: 1rem;">
+    <button class="button secondary" (click)="filter = 'all'">All</button>
+    <button class="button secondary" (click)="filter = 'completed'">Completed</button>
+    <button class="button secondary" (click)="filter = 'active'">Active</button>
+  </div>
+
+  <!-- Update the *ngFor directive to use the filtered tasks -->
+  <ul>
+    <li *ngFor="let task of tasksFiltered" [ngClass]="{'completed': task.completed}">
+      <input type="checkbox" [checked]="task.completed" (change)="completeTask(task)">
+      {{ task.description }} - {{ task.deadline | date }}
+      <!-- Optional: add more features such as edit, delete, etc. -->
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,74 @@
+.container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+input[type="text"], input[type="date"] {
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+button {
+  margin: 5px;
+  margin-left: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.input {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #d3d3d3;
+  border-radius: 7px;
+  display: flex;
+  height: 43px;
+  min-width: 271px;
+  padding: 0 22px;
+}
+
+.input-date {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #d3d3d3;
+  border-radius: 7px;
+  min-width: 200px;
+  padding: 11px 16px;
+}
+
+.button {
+  align-items: flex-start;
+  border-radius: 7px;
+  min-width: 128px;
+  border: none;
+  margin: auto 10px;
+  height: 43px;
+  letter-spacing: 1.44px;
+  line-height: normal;
+  min-height: 15px
+}
+
+.primary {
+  background-color: #548b59;
+  color: #ffffff;
+  justify-content: flex-end;
+  min-width: 128px;
+  padding: 13px 28.4px;
+}
+
+.secondary {
+  border: 1px solid #a2a2a2;
+}
